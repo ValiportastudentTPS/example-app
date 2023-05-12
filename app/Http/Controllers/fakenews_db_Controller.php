@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB as FacadesDB;
 
 
 
-class fakeDb_Controller extends Controller
+class fakenews_db_Controller extends Controller
 {
 
     public function fakeData(Request $request){
