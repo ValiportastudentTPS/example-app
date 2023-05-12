@@ -10,8 +10,10 @@ use Illuminate\Support\Facades\DB as FacadesDB;
 
 
 
+
 class fakeDb_Controller extends Controller
 {
+
     public function fakeData(Request $request){
         if(FacadesDB::connection()->getDatabaseName()){
             $database=FacadesDB::connection()->getDatabaseName();
