@@ -17,7 +17,7 @@ class fakenews_db_Controller extends Controller
     public function fakeData(Request $request){
         if(FacadesDB::connection()->getDatabaseName()){
             $database=FacadesDB::connection()->getDatabaseName();
-           echo ("successfully connection , ".$database);}
+           echo ("successfully ".$database);}
         
     }
 }
