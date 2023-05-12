@@ -15,7 +15,7 @@ use App\Http\Controllers\fakeDb_Controller;
 */
 
 
-Route::get('/connection',[fakeDb_Controller::class,'fakeData']);
+Route::get('/connection',[fakenews_db_Controller::class,'fakeData']);
 Route::get('/', function () {
     return view('welcome');
 });
