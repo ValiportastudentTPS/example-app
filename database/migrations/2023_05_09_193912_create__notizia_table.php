@@ -14,10 +14,10 @@ return new class extends Migration
     {
         Schema::create('notizia', function (Blueprint $table) {
             $table->increments('idNotizia');
-            $table->
-            $table->string('url',100);
-            
-    
+            $table->string('url',500);
+            $table->string('categoria',100);
+            $table->string('formato',100);
+            $table->string('fonte',100);
             $table->timestamps();
         });
     }
