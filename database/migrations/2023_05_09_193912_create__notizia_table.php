@@ -12,8 +12,9 @@ return new class extends Migration
     /*l'id potrebbe servire per distinguere*/
     public function up(): void
     {
-        Schema::create('_notizie', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('notizia', function (Blueprint $table) {
+            $table->increments('idNotizia');
+            $table->
             $table->string('url',100);
             
     
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('_notizie');
+        Schema::dropIfExists('notizia');
     }
 };
