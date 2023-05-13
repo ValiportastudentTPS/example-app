@@ -31,10 +31,14 @@ class RouteServiceProvider extends ServiceProvider
         $this->routes(function () {
             Route::middleware('api')
                 ->prefix('api')
+				->namespace($this->contNamespace)
                 ->group(base_path('routes/api.php'));
 
             Route::middleware('web')
+				->namespace($this->contNamespace) //->namespace('App\Http\Controllers')
                 ->group(base_path('routes/web.php'));
         });
     }
+	
+	protected $contNamespace = 'App\\Http\\Controllers';
 }
